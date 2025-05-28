@@ -1,11 +1,10 @@
 class Node:
     def __init__(self, key):
         self.key = key
-        self.duplicate = False
         self.left = None
         self.right = None
 
-class ABRFlag:
+class ABRNormal:
     def __init__(self):
         self.root = None
 
@@ -19,8 +18,7 @@ class ABRFlag:
             node.left = self._insert_rec(node.left, key)
         elif key > node.key:
             node.right = self._insert_rec(node.right, key)
-        else:
-            node.duplicate = True  # mark that a duplicate exists
+        # If the key is already present, do nothing (ignore duplicates)
         return node
 
     def search(self, key):
@@ -42,4 +40,4 @@ class ABRFlag:
     def _in_order_rec(self, node):
         if node is None:
             return []
-        return self._in_order_rec(node.left) + [(node.key, node.duplicate)] + self._in_order_rec(node.right)
+        return self._in_order_rec(node.left) + [node.key] + self._in_order_rec(node.right)

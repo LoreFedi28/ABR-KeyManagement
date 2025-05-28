@@ -1,11 +1,11 @@
 class Node:
     def __init__(self, key):
         self.key = key
-        self.duplicate = False
+        self.values = [key]  # list containing all values with this key
         self.left = None
         self.right = None
 
-class ABRFlag:
+class ABRList:
     def __init__(self):
         self.root = None
 
@@ -20,7 +20,7 @@ class ABRFlag:
         elif key > node.key:
             node.right = self._insert_rec(node.right, key)
         else:
-            node.duplicate = True  # mark that a duplicate exists
+            node.values.append(key)  # add duplicate to the list
         return node
 
     def search(self, key):
@@ -42,4 +42,4 @@ class ABRFlag:
     def _in_order_rec(self, node):
         if node is None:
             return []
-        return self._in_order_rec(node.left) + [(node.key, node.duplicate)] + self._in_order_rec(node.right)
+        return self._in_order_rec(node.left) + [(node.key, len(node.values))] + self._in_order_rec(node.right)

@@ -24,33 +24,89 @@
   &quot;associatedIndex&quot;: 4
 }</component>
   <component name="ProjectId" id="2xVBpwGF53EGQ4w4UaFlEN7HUWK" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.abr_normale.executor": "Run",
-    "Python.benchmark.executor": "Run",
-    "Python.test_abr.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "<unknown>",
-    "last_opened_file_path": "D:/Lorenzo/Scuola/Aprile-Giugno 2025/a",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.abr_flag.executor&quot;: &quot;Run&quot;,
+    &quot;Python.abr_normale.executor&quot;: &quot;Run&quot;,
+    &quot;Python.benchmark.executor&quot;: &quot;Run&quot;,
+    &quot;Python.test_abr.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Lorenzo/Scuola/Aprile-Giugno 2025/ABR-KeyManagement&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
+  <component name="RunManager" selected="Python.benchmark">
+    <configuration name="benchmark" type="PythonConfigurationType" factoryName="Python">
+      <module name="ABR-KeyManagement" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="SDK_NAME" value="Python 3.11 (ABR-KeyManagement)" />
+      <option name="WORKING_DIRECTORY" value="D:\Lorenzo\Scuola\Aprile-Giugno 2025\ABR-KeyManagement" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/benchmark.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test_abr" type="PythonConfigurationType" factoryName="Python">
+      <module name="ABR-KeyManagement" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="SDK_NAME" value="Python 3.11 (ABR-KeyManagement)" />
+      <option name="WORKING_DIRECTORY" value="D:\Lorenzo\Scuola\Aprile-Giugno 2025\ABR-KeyManagement" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test_abr.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.benchmark" />
+      <item itemvalue="Python.test_abr" />
+    </list>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-1632447f56bf-JavaScript-PY-243.26053.29" />
-        <option value="bundled-python-sdk-b1dbf8ef85a6-4df51de95216-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-243.26053.29" />
+        <option value="bundled-js-predefined-d6986cc7102b-6a121458b545-JavaScript-PY-251.25410.159" />
+        <option value="bundled-python-sdk-e0ed3721d81e-36ea0e71a18c-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-251.25410.159" />
       </set>
     </attachedChunks>
   </component>
@@ -70,6 +126,15 @@
       <workItem from="1748031297205" duration="26000" />
       <workItem from="1748031324562" duration="89000" />
       <workItem from="1748031455673" duration="109000" />
+      <workItem from="1748031608352" duration="253000" />
+      <workItem from="1748209993564" duration="230000" />
+      <workItem from="1748210230846" duration="103000" />
+      <workItem from="1748210362508" duration="224000" />
+      <workItem from="1748210630942" duration="434000" />
+      <workItem from="1748211115558" duration="434000" />
+      <workItem from="1748211575116" duration="61000" />
+      <workItem from="1748296013469" duration="1618000" />
+      <workItem from="1748380956472" duration="8859000" />
     </task>
     <task id="LOCAL-00001" summary="Completata implementazione e confronto di tre strategie per gestione di chiavi duplicate in ABR:&#10;- abr_normale.py: ignora i duplicati&#10;- abr_flag.py: utilizza un flag booleano per segnalarli&#10;- abr_lista.py: mantiene una lista di occorrenze per chiave&#10;Aggiunto file test_abr.py con test unitari unificati per tutte le versioni.&#10;Implementato benchmark.py per misurare tempi di inserimento e ricerca su dataset crescenti.&#10;Generati grafici e tabella riassuntiva dei risultati sperimentali.&#10;Preparato template LaTeX per relazione secondo le linee guida ufficiali del corso.">
       <option name="closed" value="true" />
@@ -101,8 +166,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="Completata implementazione e confronto di tre strategie per gestione di chiavi duplicate in ABR:&#10;- abr_normale.py: ignora i duplicati&#10;- abr_flag.py: utilizza un flag booleano per segnalarli&#10;- abr_lista.py: mantiene una lista di occorrenze per chiave&#10;Aggiunto file test_abr.py con test unitari unificati per tutte le versioni.&#10;Implementato benchmark.py per misurare tempi di inserimento e ricerca su dataset crescenti.&#10;Generati grafici e tabella riassuntiva dei risultati sperimentali.&#10;Preparato template LaTeX per relazione secondo le linee guida ufficiali del corso." />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/gestione_chiavi_ABR$test_abr.coverage" NAME="test_abr Coverage Results" MODIFIED="1748014126477" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/gestione_chiavi_ABR$benchmark.coverage" NAME="benchmark Coverage Results" MODIFIED="1748014705314" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/ABR_KeyManagement$benchmark.coverage" NAME="benchmark Coverage Results" MODIFIED="1748391871615" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="D:\Lorenzo\Scuola\Aprile-Giugno 2025\ABR-KeyManagement" />
     <SUITE FILE_PATH="coverage/gestione_chiavi_ABR$abr_normale.coverage" NAME="abr_normale Coverage Results" MODIFIED="1748013791813" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/gestione_chiavi_ABR$test_abr.coverage" NAME="test_abr Coverage Results" MODIFIED="1748014126477" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/ABR_KeyManagement$test_abr.coverage" NAME="test_abr Coverage Results" MODIFIED="1748382173094" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="D:\Lorenzo\Scuola\Aprile-Giugno 2025\ABR-KeyManagement" />
   </component>
 </project>
