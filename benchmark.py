@@ -1,5 +1,6 @@
 import time
 import random
+import statistics
 
 from abr_normal import ABRNormal
 from abr_flag import ABRFlag
@@ -12,25 +13,29 @@ def generate_data(n, with_duplicates=False):
     random.shuffle(values)
     return values
 
-def measure_time(abr_class, input_data, n_tests=100):
-    abr = abr_class()
+def measure_time(abr_class, input_data, n_repeats=5):
+    insertion_times = []
+    search_times = []
 
-    # Insertion time
-    t0 = time.time()
-    for value in input_data:
-        abr.insert(value)
-    t1 = time.time()
-    insertion_time = t1 - t0
+    for _ in range(n_repeats):
+        abr = abr_class()
+        # Insertion
+        t0 = time.time()
+        for value in input_data:
+            abr.insert(value)
+        t1 = time.time()
+        insertion_times.append(t1 - t0)
 
-    # Search time
-    keys_to_search = random.sample(input_data, min(n_tests, len(input_data)))
-    t0 = time.time()
-    for key in keys_to_search:
-        abr.search(key)
-    t1 = time.time()
-    search_time = t1 - t0
+        # Search (20% dei dati)
+        keys_to_search = random.sample(input_data, max(1, len(input_data) // 5))
+        t0 = time.time()
+        for key in keys_to_search:
+            abr.search(key)
+        t1 = time.time()
+        search_times.append(t1 - t0)
 
-    return insertion_time, search_time
+    return statistics.mean(insertion_times), statistics.mean(search_times)
+
 
 
 def run_tests():
@@ -69,9 +74,9 @@ def generate_graph_with_duplicates(results_dict):
     plt.plot(input_sizes, ins_normal, 'o-', label='Normal', color='gold')
     plt.plot(input_sizes, ins_flag, 'o-', label='Flag', color='orangered')
     plt.plot(input_sizes, ins_list, 'o-', label='List', color='crimson')
-    plt.title("Insertion with Duplicates", color='blue')
-    plt.xlabel("Number of Operations", color='red')
-    plt.ylabel("Time (s)", color='red')
+    plt.title("Inserimento con Duplicati", color='blue')
+    plt.xlabel("Numero di Operazioni", color='red')
+    plt.ylabel("Tempo", color='red')
     plt.grid(True)
     plt.legend()
 
@@ -80,9 +85,9 @@ def generate_graph_with_duplicates(results_dict):
     plt.plot(input_sizes, search_normal, 'o-', label='Normal', color='gold')
     plt.plot(input_sizes, search_flag, 'o-', label='Flag', color='orangered')
     plt.plot(input_sizes, search_list, 'o-', label='List', color='crimson')
-    plt.title("Search with Duplicates", color='blue')
-    plt.xlabel("Number of Operations", color='red')
-    plt.ylabel("Time (s)", color='red')
+    plt.title("Ricerca con Duplicati", color='blue')
+    plt.xlabel("Numero di Operazioni", color='red')
+    plt.ylabel("Tempo", color='red')
     plt.grid(True)
     plt.legend()
 
@@ -113,9 +118,9 @@ def benchmark_without_duplicates():
     plt.plot(input_sizes, ins_normal, 'o-', label='Normal', color='gold')
     plt.plot(input_sizes, ins_flag, 'o-', label='Flag', color='orangered')
     plt.plot(input_sizes, ins_list, 'o-', label='List', color='crimson')
-    plt.title("Insertion without Duplicates", color='blue')
-    plt.xlabel("Number of Operations", color='red')
-    plt.ylabel("Time (s)", color='red')
+    plt.title("Inserimento senza Duplicati", color='blue')
+    plt.xlabel("Numero di Operazioni", color='red')
+    plt.ylabel("Tempo", color='red')
     plt.grid(True)
     plt.legend()
 
@@ -124,9 +129,9 @@ def benchmark_without_duplicates():
     plt.plot(input_sizes, search_normal, 'o-', label='Normal', color='gold')
     plt.plot(input_sizes, search_flag, 'o-', label='Flag', color='orangered')
     plt.plot(input_sizes, search_list, 'o-', label='List', color='crimson')
-    plt.title("Search without Duplicates", color='blue')
-    plt.xlabel("Number of Operations", color='red')
-    plt.ylabel("Time (s)", color='red')
+    plt.title("Ricerca senza Duplicati", color='blue')
+    plt.xlabel("Numero di Operazioni", color='red')
+    plt.ylabel("Tempo", color='red')
     plt.grid(True)
     plt.legend()
 

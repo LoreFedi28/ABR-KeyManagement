@@ -135,6 +135,8 @@
       <workItem from="1748211575116" duration="61000" />
       <workItem from="1748296013469" duration="1618000" />
       <workItem from="1748380956472" duration="8859000" />
+      <workItem from="1748444685338" duration="1309000" />
+      <workItem from="1748455818775" duration="765000" />
     </task>
     <task id="LOCAL-00001" summary="Completata implementazione e confronto di tre strategie per gestione di chiavi duplicate in ABR:&#10;- abr_normale.py: ignora i duplicati&#10;- abr_flag.py: utilizza un flag booleano per segnalarli&#10;- abr_lista.py: mantiene una lista di occorrenze per chiave&#10;Aggiunto file test_abr.py con test unitari unificati per tutte le versioni.&#10;Implementato benchmark.py per misurare tempi di inserimento e ricerca su dataset crescenti.&#10;Generati grafici e tabella riassuntiva dei risultati sperimentali.&#10;Preparato template LaTeX per relazione secondo le linee guida ufficiali del corso.">
       <option name="closed" value="true" />
@@ -167,7 +169,7 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/gestione_chiavi_ABR$benchmark.coverage" NAME="benchmark Coverage Results" MODIFIED="1748014705314" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/ABR_KeyManagement$benchmark.coverage" NAME="benchmark Coverage Results" MODIFIED="1748391871615" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="D:\Lorenzo\Scuola\Aprile-Giugno 2025\ABR-KeyManagement" />
+    <SUITE FILE_PATH="coverage/ABR_KeyManagement$benchmark.coverage" NAME="benchmark Coverage Results" MODIFIED="1748445993152" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="D:\Lorenzo\Scuola\Aprile-Giugno 2025\ABR-KeyManagement" />
     <SUITE FILE_PATH="coverage/gestione_chiavi_ABR$abr_normale.coverage" NAME="abr_normale Coverage Results" MODIFIED="1748013791813" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/gestione_chiavi_ABR$test_abr.coverage" NAME="test_abr Coverage Results" MODIFIED="1748014126477" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/ABR_KeyManagement$test_abr.coverage" NAME="test_abr Coverage Results" MODIFIED="1748382173094" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="D:\Lorenzo\Scuola\Aprile-Giugno 2025\ABR-KeyManagement" />
