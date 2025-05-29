@@ -1,4 +1,4 @@
-# ABR Key Management Benchmark
+# ABR Key Management
 
 This project compares three variants of **Binary Search Trees (BST)** for handling **duplicate keys**, analyzing their performance in terms of insertion and search time:
 
