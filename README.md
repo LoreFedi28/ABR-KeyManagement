@@ -1,6 +1,3 @@
-Sure! Here's the full `README.md` translated and polished in English — ready to copy and paste into your GitHub repository:
-
-```markdown
 # ABR Key Management Benchmark
 
 This project compares three variants of **Binary Search Trees (BST)** for handling **duplicate keys**, analyzing their performance in terms of insertion and search time:
@@ -68,7 +65,7 @@ python test_abr.py
 
 This validates insertions, searches, and duplicate handling for all three BST variants.
 
-## 📊 Expected Output
+## Expected Output
 
 The generated charts compare average insertion and search times across different input sizes, both **with** and **without duplicates**. In scenarios with duplicates, `Flag` and `List` variants typically show more stable and reliable behavior.
 
